@@ -102,15 +102,6 @@ Common scopes:
 - Component names: `button`, `modal`, `header`
 - Module names: `parser`, `compiler`, `validator`
 
-## Commit Splitting Strategy
-
-Automatically suggest splitting when detecting:
-1. **Mixed types**: Features + fixes in same commit
-2. **Multiple concerns**: Unrelated changes
-3. **Large scope**: Changes across many modules
-4. **File patterns**: Source + test + docs together
-5. **Dependencies**: Dependency updates mixed with features
-
 ## Best Practices
 
 ### DO:
@@ -153,17 +144,6 @@ BREAKING CHANGE: /api/auth endpoints now require client_id parameter
 Closes: #456, #457
 Refs: RFC-6749, RFC-7636
 ```
-
-## Workflow
-
-1. Analyze changes to determine commit type and scope
-2. Check if changes should be split into multiple commits
-3. For each commit:
-   - Stage appropriate files
-   - Generate commit message based on style setting
-   - Create detailed body and footer
-   - Execute git commit with generated message
-4. Provide summary of committed changes
 
 ## Important Notes
 
